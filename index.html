@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kid games</title>
+  <style>
+    :root { color: #3d2c6b; font-family: "Baloo 2", "Comic Sans MS", "Trebuchet MS", system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 30% 0%, #ffe9f3, #d9ecff 60%, #c9b6f2); display: grid; place-items: center; }
+    main { width: min(900px, 100% - 32px); padding: 24px 0; }
+    h1 { text-align: center; font-size: clamp(32px, 7vw, 54px); margin: 0 0 6px; color: #7b2cbf; }
+    p.sub { text-align: center; margin: 0 0 24px; color: #7b6fa8; }
+    .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    a.card { display: block; text-decoration: none; color: inherit; background: #fff; border-radius: 22px; padding: 18px; box-shadow: 0 6px 0 #cdbdf0, 0 10px 24px rgba(80,50,140,.12); transition: transform .15s; }
+    a.card:hover { transform: translateY(-4px); }
+    .card .big { font-size: 46px; }
+    .card h2 { margin: 6px 0 4px; }
+    .card p { margin: 0; line-height: 1.4; color: #5b4f86; }
+    footer { text-align: center; margin-top: 28px; font-size: 14px; color: #7b6fa8; line-height: 1.5; }
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Kid games</h1>
+    <p class="sub">Des jeux pour les enfants : prototypes et versions d'essai. · <i>Games for children: prototypes and trial versions.</i></p>
+    <div class="cards">
+      <a class="card" href="strange-mind/"><div class="big">🦉</div><h2>Strange Mind</h2>
+        <p>Des formes qui tournent : leçons guidées, cubes qui roulent, tourbillons, chasse aux relations. Dès 5 ans.</p></a>
+      <a class="card" href="https://edu-fpar.github.io/"><div class="big">🎓</div><h2>edu-fpar</h2>
+        <p>Les jeux aboutis (Star Nav, Strange Mind · Défis éclair) et les outils pédagogiques.</p></a>
+    </div>
+    <footer>© 2026 François Parlant · <a href="https://github.com/fxpar/kid-games">github.com/fxpar/kid-games</a> ·
+      licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">CC BY-NC-SA 4.0</a></footer>
+  </main>
+</body>
+</html>

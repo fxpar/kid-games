@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Strange Mind v1</title>
+  <meta name="description" content="Des formes qui sont des volumes, des animaux qui sont des nombres : un univers pour initier les enfants aux rotations, aux nombres complexes, aux matrices et à l'algèbre géométrique.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ================= MENU ================= -->
+  <section id="menu" class="screen" hidden>
+    <header class="menu-head">
+      <h1><span class="logo">🟪🔺🛑</span> Strange Mind <small style="font-size:.4em;opacity:.6">v1</small></h1>
+      <button id="btn-lang" class="icon-btn lang-btn"></button>
+      <p class="tagline" data-t>Les formes cachent des secrets… et les animaux sont des nombres !</p>
+    </header>
+    <div id="levels" class="levels"></div>
+    <div class="menu-actions">
+      <button id="btn-sandbox" class="btn" data-t>🧪 Bac à sable</button>
+      <button id="btn-help" class="btn" data-t>🖐️ Comment jouer</button>
+    </div>
+    <details class="settings">
+      <summary data-t>⚙️ Réglages (pour les grands)</summary>
+      <label><input type="checkbox" id="opt-voice"> <span data-t>🔊 Lire les consignes à voix haute</span></label>
+      <label><input type="checkbox" id="opt-sound"> <span data-t>🎵 Petits sons</span></label>
+      <label><input type="checkbox" id="opt-onefinger"> <span data-t>☝️ Un seul doigt suffit pour basculer (écran tactile)</span></label>
+      <label><input type="checkbox" id="opt-invert"> <span data-t>↕️ Inverser le sens du pavé tactile</span></label>
+    </details>
+  </section>
+
+  <!-- ================= JEU ================= -->
+  <section id="game" class="screen" hidden>
+    <header class="topbar">
+      <button id="btn-home" class="icon-btn" title="Menu" data-t-title>🏠</button>
+      <h2 id="level-title"></h2>
+      <div class="tools">
+        <button id="btn-speak" class="icon-btn" title="Réécouter" data-t-title>🔊</button>
+        <button id="btn-hint" class="icon-btn" title="Un indice" data-t-title>💡</button>
+        <button id="btn-reset" class="icon-btn" title="Recommencer l'étape" data-t-title>🔄</button>
+        <button id="btn-guide" class="icon-btn" title="Pour les grands : la notion mathématique" data-t-title>🎓</button>
+      </div>
+    </header>
+    <div class="bubble">
+      <span class="mascot">🦉</span>
+      <div><p id="say"></p><div id="stepdots"></div></div>
+    </div>
+    <div class="play">
+      <div id="stage"></div>
+      <div id="panels"></div>
+    </div>
+  </section>
+
+  <div id="modal" hidden>
+    <div class="modal-card">
+      <button class="modal-close icon-btn" title="Fermer" data-t-title>✖</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <template id="help-template">
+    <h2 data-t>🖐️ Comment jouer</h2>
+    <table class="help">
+      <tr><th></th><th data-t>Basculer la forme<br><small>(voir une autre face)</small></th><th data-t>Tourner la face<br><small>(le dessin tourne)</small></th></tr>
+      <tr><td data-t>📱 Écran tactile</td><td data-t>glisser avec 2 doigts (ou 1)</td><td data-t>tourner 2 doigts comme une clé, ou ↺ ↻</td></tr>
+      <tr><td data-t>💻 Pavé tactile</td><td data-t>défiler avec 2 doigts sur la forme</td><td data-t>pincer, Maj + défiler, ou ↺ ↻</td></tr>
+      <tr><td data-t>🖱️ Souris</td><td data-t>cliquer-glisser</td><td data-t>clic droit glissé, Maj + glisser, ou ↺ ↻</td></tr>
+      <tr><td data-t>⌨️ Clavier</td><td data-t>flèches</td><td data-t>Q (↺) et E (↻)</td></tr>
+    </table>
+    <p data-t>Les boutons 🎓 dans chaque niveau expliquent aux adultes la notion mathématique cachée.</p>
+  </template>
+
+  <canvas id="confetti"></canvas>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

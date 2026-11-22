@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Strange Mind v5</title>
+  <meta name="description" content="La chasse aux relations : trouve partout où deux dauphins font un quart de tour, où deux lapins s'annulent, où deux miroirs tournent.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section id="home" class="screen" hidden>
+    <header class="home-head">
+      <a class="icon-btn" href="../" data-t-title title="Accueil Strange Mind">🏠</a>
+      <h1 data-t>La chasse aux relations <small>v5</small></h1>
+      <button id="opt-voice" class="icon-btn" data-t-title title="Voix">🗣️</button>
+      <button id="opt-sound" class="icon-btn" data-t-title title="Son">🔊</button>
+      <button id="btn-help" class="icon-btn" data-t-title title="Comment jouer">❔</button>
+      <button id="opt-lang" class="icon-btn"></button>
+    </header>
+    <button id="btn-free" class="free"><span class="big">⏱️</span><b data-t>Chasse libre 90 s</b><small id="free-best"></small></button>
+    <div id="chapters" class="chapters"></div>
+  </section>
+
+  <section id="play" class="screen" hidden>
+    <header id="hud">
+      <button id="btn-home" class="icon-btn" data-t-title title="Accueil">🏠</button>
+      <div class="title" id="hud-title"></div>
+      <div id="hud-time" class="time"></div>
+      <div id="hud-combo" class="combo"></div>
+      <div class="score"><b id="hud-score">0</b></div>
+    </header>
+    <div id="cards" class="cards"></div>
+    <div id="board"></div>
+    <footer class="bar">
+      <span class="mascot">🦉</span><p id="say"></p>
+      <button id="btn-hint" class="icon-btn" data-t-title title="Un indice">💡</button>
+    </footer>
+  </section>
+
+  <div id="modal" hidden><div class="modal-card"><div class="modal-body"></div></div></div>
+
+  <template id="help-template">
+    <h2 data-t>Comment jouer</h2>
+    <p data-t="help-1">En haut, les <b>modèles</b> montrent une relation : deux dauphins qui font un quart de tour, deux lapins qui s'annulent…
+      Le modèle tourne pour montrer qu'elle marche <b>dans toutes les positions</b>.</p>
+    <p data-t="help-2"><b>Glisse</b> d'une case à sa voisine (ou sur 3 cases en ligne) pour montrer un endroit du plateau où la relation est vraie.
+      Pour un carré de 4, glisse <b>en diagonale</b>.</p>
+    <p data-t="help-3">Quand une flèche est dessinée sous le modèle, <b>le sens compte</b> : glisse du premier vers le dernier.</p>
+    <p data-t="help-4">Les points sous chaque modèle montrent combien il en reste à trouver. Les relations plus difficiles rapportent plus, et les trouvailles rapides font des combos 🔥.</p>
+    <button class="btn primary" data-act="ok" data-t>C'est parti !</button>
+  </template>
+
+  <canvas id="confetti"></canvas>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

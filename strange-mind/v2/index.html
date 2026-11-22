@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Strange Mind v2</title>
+  <meta name="description" content="Fais rouler les cubes jusqu'à leur maison, avec le bon animal sur le dessus.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section id="map" class="screen" hidden>
+    <header class="map-head">
+      <a class="icon-btn" href="../" title="Accueil" data-t-title>🏠</a>
+      <h1><span data-t>Les cubes qui roulent</span> <small>v2</small></h1>
+      <button id="opt-sound" class="icon-btn" title="Son" data-t-title>🔊</button>
+      <button id="btn-help" class="icon-btn" title="Comment jouer" data-t-title>❔</button>
+      <button id="btn-lang" class="icon-btn"></button>
+    </header>
+    <div id="worlds"></div>
+  </section>
+
+  <section id="play" class="screen" hidden>
+    <header id="hud">
+      <button id="btn-map" class="icon-btn" title="Carte" data-t-title>🗺️</button>
+      <div class="info">
+        <div class="title" id="hud-title"></div>
+        <div class="moves"><b id="hud-moves">0</b> <span data-t>coups</span> <span class="par">· <span data-t>★ en</span> <b id="hud-par">0</b></span> <span id="hud-fish" class="fish"></span></div>
+      </div>
+      <canvas id="net" title="Les 6 faces du cube (au centre : le dessus, à droite : le dessous)" data-t-title></canvas>
+      <button id="btn-hint" class="icon-btn" title="Indice" data-t-title>💡</button>
+      <button id="btn-undo" class="icon-btn" title="Annuler" data-t-title>↶</button>
+      <button id="btn-restart" class="icon-btn" title="Recommencer" data-t-title>↻</button>
+    </header>
+    <div id="board"></div>
+  </section>
+
+  <div id="modal" hidden><div class="modal-card"><div class="modal-body"></div></div></div>
+
+  <template id="help-template">
+    <h2 data-t>Comment jouer</h2>
+    <p data-t="help-1"><b>Glisse</b> (doigt, souris, pavé tactile) ou utilise les <b>flèches</b> : le cube <b>roule</b> d'une case.
+      Le dessin du dessus change à chaque roulade !</p>
+    <p data-t="help-2">Amène chaque cube sur sa <b>maison</b> (case en pointillés) avec <b>le bon animal sur le dessus</b>.
+      Si la maison montre un animal tourné, il doit regarder dans ce sens. ↻ veut dire : peu importe le sens.</p>
+    <p data-t="help-3">🌊 On n'entre dans l'eau qu'avec le <b>dauphin</b> sur le dessus, et dans l'eau on nage sans rouler.<br>
+      ❄️ Sur la glace, on glisse sans rouler.<br>
+      🎠 Le manège fait tourner le cube sur place.<br>
+      👯 Les jumeaux bougent ensemble, en miroir.</p>
+    <p data-t="help-4">↶ annule un coup, 💡 montre le meilleur coup. Trouve le chemin le plus court pour les étoiles, et le poisson doré 🐟 caché !</p>
+    <button class="btn primary" data-act="ok" data-t>C'est parti !</button>
+  </template>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

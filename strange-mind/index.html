@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strange Mind</title>
+  <style>
+    :root { color: #3d2c6b; font-family: "Baloo 2", "Comic Sans MS", "Trebuchet MS", system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 30% 0%, #ffe9f3, #d9ecff 60%, #c9b6f2); display: grid; place-items: center; }
+    main { width: min(900px, 100% - 32px); padding: 24px 0; position: relative; }
+    h1 { text-align: center; font-size: clamp(32px, 7vw, 54px); margin: 0 0 6px; color: #7b2cbf; }
+    p.sub { text-align: center; margin: 0 0 24px; color: #7b6fa8; }
+    .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    a.card { display: block; text-decoration: none; color: inherit; background: #fff; border-radius: 22px; padding: 18px; box-shadow: 0 6px 0 #cdbdf0, 0 10px 24px rgba(80,50,140,.12); transition: transform .15s; }
+    a.card:hover { transform: translateY(-4px); }
+    .card .big { font-size: 46px; }
+    .card h2 { margin: 6px 0 4px; }
+    .card p { margin: 0; line-height: 1.4; color: #5b4f86; }
+    #lang { position: absolute; top: 24px; right: 0; width: 46px; height: 46px; border: none; border-radius: 14px; background: #fff; font-size: 16px; font-weight: 800; color: #7b2cbf; box-shadow: 0 3px 0 #cdbdf0; cursor: pointer; }
+    footer { text-align: center; margin-top: 28px; font-size: 14px; color: #7b6fa8; line-height: 1.5; }
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <button id="lang" title="English version">EN</button>
+    <h1>Strange Mind</h1>
+    <p class="sub" data-t="hub-sub">Cinq façons de jouer avec des formes qui tournent.</p>
+    <div class="cards">
+      <a class="card" href="v1/"><div class="big">🦉</div><h2 data-t="hub-v1-t">v1 · Les leçons</h2>
+        <p data-t="hub-v1">Version guidée : 12 niveaux, des consignes lues à voix haute, de i à l'algèbre géométrique.</p></a>
+      <a class="card" href="v2/"><div class="big">🎲</div><h2 data-t="hub-v2-t">v2 · Les cubes qui roulent</h2>
+        <p data-t="hub-v2">Jeu de réflexion : amène chaque cube à sa maison avec le bon animal sur le dessus. Le chemin compte !</p></a>
+      <a class="card" href="v3/"><div class="big">🌀</div><h2 data-t="hub-v3-t">v3 · Les tourbillons</h2>
+        <p data-t="hub-v3">Jeu rapide à la Candy Crush : on fait tourner des carrés d'animaux, parades, fusées, Rush 60 s.</p></a>
+      <a class="card" href="https://edu-fpar.github.io/strange-mind/v4/"><div class="big">⚡</div><h2 data-t="hub-v4-t">v4 · Les défis éclair</h2>
+        <p data-t="hub-v4">Les notions de la v1 en défis de quelques secondes : séries, niveaux, médailles, Rush et défi du jour. (Version publiée sur edu-fpar.)</p></a>
+      <a class="card" href="v5/"><div class="big">🔎</div><h2 data-t="hub-v5-t">v5 · La chasse aux relations</h2>
+        <p data-t="hub-v5">Le jeu montre une relation (quart de tour, opposés, miroir…) : trouve-la partout sur le plateau. Plus elle est riche, plus elle rapporte.</p></a>
+    </div>
+    <footer data-t="hub-footer">« Strange Mind » par François Parlant ·
+      <a href="https://github.com/fxpar/kid-games">github.com/fxpar/kid-games</a><br>
+      Licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">CC BY-NC-SA 4.0</a> :
+      partage et adaptation autorisés, en citant l'auteur, sans usage commercial, sous la même licence.</footer>
+  </main>
+  <script type="module">
+    import { setDictionary, translateDom, langToggle } from './v1/js/i18n.js';
+    setDictionary({
+      'hub-sub': 'Five ways to play with shapes that turn.',
+      'hub-v1-t': 'v1 · The lessons',
+      'hub-v1': 'Guided version: 12 levels, instructions read aloud, from i to geometric algebra.',
+      'hub-v2-t': 'v2 · Rolling cubes',
+      'hub-v2': 'Puzzle game: bring each cube home with the right animal on top. The path matters!',
+      'hub-v3-t': 'v3 · Whirls',
+      'hub-v3': 'Fast Candy Crush-style game: turn squares of animals, parades, rockets, Rush 60 s.',
+      'hub-v4-t': 'v4 · Quick challenges',
+      'hub-v4': 'The ideas of v1 as challenges lasting a few seconds: streaks, levels, medals, Rush and daily challenge. (Published on edu-fpar.)',
+      'hub-v5-t': 'v5 · The relation hunt',
+      'hub-v5': 'The game shows a relation (quarter turn, opposites, mirror…): find it everywhere on the board. The richer it is, the more it scores.',
+      'hub-footer': '"Strange Mind" by François Parlant · <a href="https://github.com/fxpar/kid-games">github.com/fxpar/kid-games</a><br>License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>: you may share and adapt it, crediting the author, for non-commercial use, under the same license.',
+    });
+    translateDom();
+    langToggle(document.getElementById('lang'));
+  </script>
+</body>
+</html>
