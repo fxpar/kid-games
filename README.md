@@ -11,7 +11,7 @@ Jouer en ligne : https://fxpar.github.io/kid-games/
 
 | Jeu | Dossier | Idée |
 |---|---|---|
-| Strange Mind (v1 à v5, Maxwell, tiroirs) | [`strange-mind/`](strange-mind/) | des formes qui tournent : rotations, nombres complexes, matrices et algèbre géométrique dès 5 ans, sans formule ; puis deux séries vers les équations de Maxwell (le vent invisible, les tiroirs magiques). Six leçons de la v1 et le vent invisible sont publiés [sur edu-fpar](https://edu-fpar.github.io/strange-mind/). |
+| Strange Mind (v1 à v5, Maxwell, tiroirs) | [`strange-mind/`](strange-mind/) | des formes qui tournent : rotations, nombres complexes, matrices et algèbre géométrique dès 5 ans, sans formule ; puis deux séries vers les équations de Maxwell (le vent invisible, les tiroirs magiques). Six jeux de la v1 (« Les formes qui tournent ») et le vent invisible sont publiés [sur edu-fpar](https://edu-fpar.github.io/strange-mind/). |
 
 ## Lancer en local
 
