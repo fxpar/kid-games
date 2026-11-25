@@ -276,7 +276,7 @@ export const LEVELS = [
 
   // ---------------------------------------------------------------- 10
   {
-    id: 'det', icon: '🪞', title: 'Le jardin qui disparaît',
+    id: 'det', icon: '🏡', title: 'Le jardin qui disparaît',
     concept: `<p>Le <b>déterminant</b> ad − bc est la <b>taille du jardin</b> transformé, avec un signe : positif si le jardin est « à l'endroit », négatif s'il est vu dans un miroir, nul s'il est écrasé en une ligne.</p>
       <p>L'enfant découvre qu'on peut écraser le jardin sans que tout soit nul (matrice non nulle mais déterminant 0), puis doubler sa taille, puis le doubler en miroir.</p>`,
     shapes: [numberCube('a', [-1.6, 1.6], 0), numberCube('b', [1.6, 1.6]), numberCube('c', [-1.6, -1.6]), numberCube('d', [1.6, -1.6], 0)],
