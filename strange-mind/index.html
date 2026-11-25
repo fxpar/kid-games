@@ -25,7 +25,7 @@
   <main>
     <button id="lang" title="English version">EN</button>
     <h1>Strange Mind</h1>
-    <p class="sub" data-t="hub-sub">Cinq façons de jouer avec des formes qui tournent.</p>
+    <p class="sub" data-t="hub-sub">Sept façons de jouer avec des formes qui tournent.</p>
     <div class="cards">
       <a class="card" href="v1/"><div class="big">🦉</div><h2 data-t="hub-v1-t">v1 · Les leçons</h2>
         <p data-t="hub-v1">Version guidée : 12 niveaux, des consignes lues à voix haute, de i à l'algèbre géométrique.</p></a>
@@ -33,10 +33,14 @@
         <p data-t="hub-v2">Jeu de réflexion : amène chaque cube à sa maison avec le bon animal sur le dessus. Le chemin compte !</p></a>
       <a class="card" href="v3/"><div class="big">🌀</div><h2 data-t="hub-v3-t">v3 · Les tourbillons</h2>
         <p data-t="hub-v3">Jeu rapide à la Candy Crush : on fait tourner des carrés d'animaux, parades, fusées, Rush 60 s.</p></a>
-      <a class="card" href="https://edu-fpar.github.io/strange-mind/v4/"><div class="big">⚡</div><h2 data-t="hub-v4-t">v4 · Les défis éclair</h2>
-        <p data-t="hub-v4">Les notions de la v1 en défis de quelques secondes : séries, niveaux, médailles, Rush et défi du jour. (Version publiée sur edu-fpar.)</p></a>
+      <a class="card" href="v4/"><div class="big">⚡</div><h2 data-t="hub-v4-t">v4 · Les défis éclair</h2>
+        <p data-t="hub-v4">Les notions de la v1 en défis de quelques secondes : séries, niveaux, médailles, Rush et défi du jour.</p></a>
       <a class="card" href="v5/"><div class="big">🔎</div><h2 data-t="hub-v5-t">v5 · La chasse aux relations</h2>
         <p data-t="hub-v5">Le jeu montre une relation (quart de tour, opposés, miroir…) : trouve-la partout sur le plateau. Plus elle est riche, plus elle rapporte.</p></a>
+      <a class="card" href="maxwell/"><div class="big">🌬️</div><h2 data-t="hub-mx-t">Le vent invisible</h2>
+        <p data-t="hub-mx">9 mini-jeux vers les équations de Maxwell : fontaines cachées, moulinets, tour du lac, fils et boussoles, aimant qui allume une lampe, et la loupe magique qui lit « ce qui sort + ce qui tourne ».</p></a>
+      <a class="card" href="tiroirs/"><div class="big">🗄️</div><h2 data-t="hub-tr-t">Les tiroirs magiques</h2>
+        <p data-t="hub-tr">6 mini-jeux pour comprendre pourquoi les quatre équations de Maxwell n'en font qu'une : lapins, flèches, tapis et cubes rangés chacun dans son tiroir.</p></a>
     </div>
     <footer data-t="hub-footer">« Strange Mind » par François Parlant ·
       <a href="https://github.com/fxpar/kid-games">github.com/fxpar/kid-games</a><br>
@@ -46,7 +50,7 @@
   <script type="module">
     import { setDictionary, translateDom, langToggle } from './v1/js/i18n.js';
     setDictionary({
-      'hub-sub': 'Five ways to play with shapes that turn.',
+      'hub-sub': 'Seven ways to play with shapes that turn.',
       'hub-v1-t': 'v1 · The lessons',
       'hub-v1': 'Guided version: 12 levels, instructions read aloud, from i to geometric algebra.',
       'hub-v2-t': 'v2 · Rolling cubes',
@@ -54,9 +58,13 @@
       'hub-v3-t': 'v3 · Whirls',
       'hub-v3': 'Fast Candy Crush-style game: turn squares of animals, parades, rockets, Rush 60 s.',
       'hub-v4-t': 'v4 · Quick challenges',
-      'hub-v4': 'The ideas of v1 as challenges lasting a few seconds: streaks, levels, medals, Rush and daily challenge. (Published on edu-fpar.)',
+      'hub-v4': 'The ideas of v1 as challenges lasting a few seconds: streaks, levels, medals, Rush and daily challenge.',
       'hub-v5-t': 'v5 · The relation hunt',
       'hub-v5': 'The game shows a relation (quarter turn, opposites, mirror…): find it everywhere on the board. The richer it is, the more it scores.',
+      'hub-mx-t': 'The invisible wind',
+      'hub-mx': '9 mini-games towards Maxwell’s equations: hidden fountains, pinwheels, around the lake, wires and compasses, a magnet that lights a lamp, and the magic magnifier that reads “what comes out + what swirls”.',
+      'hub-tr-t': 'The magic drawers',
+      'hub-tr': '6 mini-games to understand why Maxwell’s four equations are really one: bunnies, arrows, carpets and cubes, each in its own drawer.',
       'hub-footer': '"Strange Mind" by François Parlant · <a href="https://github.com/fxpar/kid-games">github.com/fxpar/kid-games</a><br>License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>: you may share and adapt it, crediting the author, for non-commercial use, under the same license.',
     });
     translateDom();

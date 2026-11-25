@@ -6,8 +6,8 @@ Des formes qui sont des volumes, des animaux qui tournent : des jeux pour constr
 (dès 5 ans) des intuitions sur les rotations, les nombres complexes, les matrices et l'algèbre
 géométrique, sans jamais écrire une formule.
 
-Ici, les versions prototypes. La version publiée, **v4 · Les défis éclair**, est sur edu-fpar :
-[jouer](https://edu-fpar.github.io/strange-mind/v4/) · [dépôt](https://github.com/edu-fpar/strange-mind).
+Ici, toutes les versions. Une sélection est publiée sur edu-fpar (six leçons de la v1 et le vent invisible, sans cadenas) :
+[jouer](https://edu-fpar.github.io/strange-mind/) · [dépôt](https://github.com/edu-fpar/strange-mind).
 
 Ouvrir `index.html` (via un serveur web : `node tools/serve.mjs` puis http://localhost:8765/) pour
 choisir une version :
@@ -17,8 +17,10 @@ choisir une version :
 | v1 · Les leçons | [`v1/`](v1/) | 12 niveaux guidés, consignes lues à voix haute : de i à l'algèbre géométrique de Hestenes |
 | v2 · Les cubes qui roulent | [`v2/`](v2/) | jeu de réflexion : le dessus du cube garde la mémoire du chemin (l'ordre des rotations compte) |
 | v3 · Les tourbillons | [`v3/`](v3/) | jeu rapide à la Candy Crush : on fait tourner des carrés d'animaux, Rush 60 s, défi du jour |
-| v4 · Les défis éclair | [edu-fpar/strange-mind](https://edu-fpar.github.io/strange-mind/v4/) | les 9 situations de la v1 en défis de quelques secondes, « faire » et « prévoir », séries, médailles, Rush |
+| v4 · Les défis éclair | [`v4/`](v4/) | les 9 situations de la v1 en défis de quelques secondes, « faire » et « prévoir », séries, médailles, Rush |
 | v5 · La chasse aux relations | [`v5/`](v5/) | le jeu montre une relation, on la retrouve partout sur le plateau ; relations de plus en plus riches (rotation, inverse, composition, miroir, bivecteur, matrices) |
+| Le vent invisible (Maxwell) | [`maxwell/`](maxwell/) | 9 mini-jeux vers les équations de Maxwell en algèbre de Hestenes : fontaines (divergence), moulinets (rotationnel), Stokes, Ampère, ∇·B = 0, Faraday, et la loupe ∇F = J. Version d'origine (avec cadenas) ; la version publiée, sans cadenas, est sur [edu-fpar](https://edu-fpar.github.io/strange-mind/maxwell/) |
+| Les tiroirs magiques | [`tiroirs/`](tiroirs/) | 6 mini-jeux, suite du vent invisible : pourquoi les quatre équations n'en font qu'une (multivecteurs, produit géométrique, dualité, égalité tiroir par tiroir, espace-temps, Cauchy) |
 
 Chaque dossier a son README. Aucune dépendance : HTML, JavaScript (modules ES) et Canvas 2D.
 Idées mises de côté : [`idees/`](idees/).
@@ -47,8 +49,10 @@ server (`node tools/serve.mjs`, then http://localhost:8765/) and pick a version:
 | v1 · The lessons | [`v1/`](v1/) | 12 guided levels with spoken instructions: from i to geometric algebra |
 | v2 · Rolling cubes | [`v2/`](v2/) | puzzle game: the top face of a cube remembers its path (the order of rotations matters) |
 | v3 · Whirls | [`v3/`](v3/) | fast Candy Crush-style game: rotate squares of animals, Rush 60 s, daily challenge |
-| v4 · Quick challenges | [edu-fpar/strange-mind](https://edu-fpar.github.io/strange-mind/v4/) | the 9 situations of v1 as few-second challenges ("do" and "predict"), streaks, medals, Rush |
+| v4 · Quick challenges | [`v4/`](v4/) | the 9 situations of v1 as few-second challenges ("do" and "predict"), streaks, medals, Rush |
 | v5 · The relation hunt | [`v5/`](v5/) | the game shows a relation and you find it everywhere on the board; richer relations (rotation, inverse, composition, mirror, bivector, matrices) score more |
+| The invisible wind (Maxwell) | [`maxwell/`](maxwell/) | 9 mini-games towards Maxwell's equations in Hestenes' algebra: fountains (divergence), pinwheels (curl), Stokes, Ampère, ∇·B = 0, Faraday, and the magnifier ∇F = J. Original version (with locks); the published version, all open, is on [edu-fpar](https://edu-fpar.github.io/strange-mind/maxwell/) |
+| The magic drawers | [`tiroirs/`](tiroirs/) | 6 mini-games following the invisible wind: why the four equations are really one (multivectors, geometric product, duality, grade-by-grade equality, spacetime, Cauchy) |
 
 Every game has an English version: EN button on each home screen, or `?lang=en` in the address.
 

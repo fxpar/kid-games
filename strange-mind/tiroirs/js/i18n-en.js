@@ -1,0 +1,66 @@
+// Dictionnaire anglais des « tiroirs magiques » : phrase française (clé) → texte anglais.
+export default {
+  // ---- page d'accueil (HTML)
+  'Les tiroirs magiques · Strange Mind': 'The magic drawers · Strange Mind',
+  'Accueil Strange Mind': 'Strange Mind home',
+  'Les tiroirs magiques <small>une seule équation</small>': 'The magic drawers <small>one single equation</small>',
+  'Voix': 'Voice',
+  'Son': 'Sound',
+  'Accueil': 'Home',
+  'Réécouter': 'Listen again',
+  'Défi du jour': 'Daily challenge',
+  foot: 'Bunnies, arrows, carpets and cubes never mix: each has its own <b>drawer</b>. Two baskets are equal when <b>every drawer</b> is equal. That is how one single equation hides four. Each game = 10 challenges; 4 wins in a row take you up a level and win a medal 🥉🥈🥇💎.',
+
+  // ---- noms des mini-jeux
+  'Le panier mélangé': 'The mixed basket',
+  'Dans quel tiroir ?': 'Which drawer?',
+  'Le cube qui change les flèches': 'The cube that changes arrows',
+  'La balance des tiroirs': 'The drawer scales',
+  'Le temps, une flèche de plus': 'Time, one more arrow',
+  'La clôture': 'The fence',
+
+  // ---- consignes des défis
+  'Que faut-il ajouter au panier pour obtenir les tiroirs de droite ?': 'What must be added to the basket to get the drawers on the right?',
+  'On vide les deux paniers dans la commode : que contient chaque tiroir ?': 'We empty both baskets into the chest: what is in each drawer?',
+  'Dans quel tiroir tombe le résultat ?': 'Which drawer does the result fall into?',
+  'Que donne cette multiplication ?': 'What does this multiplication make?',
+  'Le cube magique a changé une flèche en ce tapis. Quelle flèche ?': 'The magic cube turned an arrow into this carpet. Which arrow?',
+  'Le cube magique change la flèche en tapis. Lequel ?': 'The magic cube turns the arrow into a carpet. Which one?',
+  'Qu’ajouter à droite pour que la balance soit juste ?': 'What must go on the right so the scales are even?',
+  'Les deux paniers sont-ils égaux ?': 'Are the two baskets equal?',
+  'Trouve tous les dessins où la coccinelle ne bouge jamais !': 'Find every drawing where the ladybird never moves!',
+  'Trouve tous les dessins où la coccinelle revient à son point de départ !': 'Find every drawing where the ladybird comes back to where she started!',
+  'Trouve tous les dessins où la coccinelle va toujours vers la droite !': 'Find every drawing where the ladybird always goes right!',
+  'Regarde le film : quel dessin raconte le voyage de la coccinelle ?': 'Watch the film: which drawing tells the ladybird’s journey?',
+  'Trouve tous les jardins où quelque chose se cache derrière la clôture !': 'Find every garden where something hides behind the fence!',
+  'Rien n’est caché dedans. Quel vent souffle derrière la clôture ?': 'Nothing is hidden inside. Which wind blows behind the fence?',
+  'Regarde le vent sur la clôture : qu’y a-t-il caché dedans ?': 'Look at the wind on the fence: what is hidden inside?',
+
+  // ---- encouragements
+  'Bravo !': 'Well done!',
+  'Super !': 'Super!',
+  'Génial !': 'Brilliant!',
+  'Bien vu !': 'Good eye!',
+  'Oui !': 'Yes!',
+  'Champion !': 'Champion!',
+  'Trop fort !': 'Amazing!',
+  'Parfait !': 'Perfect!',
+  'Série de {n} ! 🔥': '{n} in a row! 🔥',
+  'Niveau supérieur ! ⭐': 'Level up! ⭐',
+  'Presque ! Regarde la bonne réponse.': 'Almost! Look at the right answer.',
+  'Presque ! Regarde.': 'Almost! Watch.',
+
+  // ---- accueil, fin de partie
+  'Record : {n}': 'Best: {n}',
+  'Bats ton record !': 'Beat your best!',
+  'Aujourd’hui : {n}/10': 'Today: {n}/10',
+  'Nouveau défi !': 'New challenge!',
+  '📅 Défi du jour': '📅 Daily challenge',
+  '🏆 Nouveau record !': '🏆 New record!',
+  'Temps écoulé !': 'Time’s up!',
+  '{n} bonnes réponses · meilleure série {b}': '{n} right answers · best streak {b}',
+  'Nouvelle médaille : {m}': 'New medal: {m}',
+  'On continue !': 'Keep going!',
+  '{n} / 10 · meilleure série 🔥 {b}': '{n} / 10 · best streak 🔥 {b}',
+  'Encore ! ↻': 'Again! ↻',
+};
