@@ -2,7 +2,7 @@
 
 Des jeux pour les enfants, faits pour le plaisir et pour explorer des idées : prototypes et versions
 d'essai. Les jeux aboutis, pensés pour la classe, sont publiés sur
-[edu-fpar.github.io](https://edu-fpar.github.io/) (Star Nav, Strange Mind : les leçons et le vent invisible).
+[edu-fpar.github.io](https://edu-fpar.github.io/) (Star Nav, Strange Mind : les formes qui tournent et le vent invisible).
 
 > 🇬🇧 Games for children, made for fun and to explore ideas: prototypes and trial versions. The finished
 > games, designed for the classroom, are published on [edu-fpar.github.io](https://edu-fpar.github.io/).

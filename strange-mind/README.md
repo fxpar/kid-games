@@ -6,7 +6,7 @@ Des formes qui sont des volumes, des animaux qui tournent : des jeux pour constr
 (dès 5 ans) des intuitions sur les rotations, les nombres complexes, les matrices et l'algèbre
 géométrique, sans jamais écrire une formule.
 
-Ici, toutes les versions. Une sélection est publiée sur edu-fpar (six leçons de la v1 et le vent invisible, sans cadenas) :
+Ici, toutes les versions. Une sélection est publiée sur edu-fpar (six jeux de la v1, renommés « Les formes qui tournent » et le vent invisible, sans cadenas) :
 [jouer](https://edu-fpar.github.io/strange-mind/) · [dépôt](https://github.com/edu-fpar/strange-mind).
 
 Ouvrir `index.html` (via un serveur web : `node tools/serve.mjs` puis http://localhost:8765/) pour
@@ -14,7 +14,7 @@ choisir une version :
 
 | Version | Dossier | Idée |
 |---|---|---|
-| v1 · Les leçons | [`v1/`](v1/) | 12 niveaux guidés, consignes lues à voix haute : de i à l'algèbre géométrique de Hestenes |
+| v1 · Les formes qui tournent | [`v1/`](v1/) | 12 niveaux guidés, consignes lues à voix haute : de i à l'algèbre géométrique de Hestenes |
 | v2 · Les cubes qui roulent | [`v2/`](v2/) | jeu de réflexion : le dessus du cube garde la mémoire du chemin (l'ordre des rotations compte) |
 | v3 · Les tourbillons | [`v3/`](v3/) | jeu rapide à la Candy Crush : on fait tourner des carrés d'animaux, Rush 60 s, défi du jour |
 | v4 · Les défis éclair | [`v4/`](v4/) | les 9 situations de la v1 en défis de quelques secondes, « faire » et « prévoir », séries, médailles, Rush |
@@ -46,7 +46,7 @@ server (`node tools/serve.mjs`, then http://localhost:8765/) and pick a version:
 
 | Version | Folder | Idea |
 |---|---|---|
-| v1 · The lessons | [`v1/`](v1/) | 12 guided levels with spoken instructions: from i to geometric algebra |
+| v1 · Shapes that turn | [`v1/`](v1/) | 12 guided levels with spoken instructions: from i to geometric algebra |
 | v2 · Rolling cubes | [`v2/`](v2/) | puzzle game: the top face of a cube remembers its path (the order of rotations matters) |
 | v3 · Whirls | [`v3/`](v3/) | fast Candy Crush-style game: rotate squares of animals, Rush 60 s, daily challenge |
 | v4 · Quick challenges | [`v4/`](v4/) | the 9 situations of v1 as few-second challenges ("do" and "predict"), streaks, medals, Rush |
